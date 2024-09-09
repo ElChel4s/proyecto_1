@@ -53,7 +53,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 });
 
 // Rutas para contacto
-Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
+Route::get('/emails', [ContactController::class, 'show'])->name('emails.contact');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 // Rutas de administración
